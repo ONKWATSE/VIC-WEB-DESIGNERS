@@ -1,0 +1,232 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:aqua;
+}
+
+
+header {
+    background: linear-gradient(rgb(70, 70, 230),rgb(3, 3, 153), rgb(3, 3, 153));
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.user-options nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.user-options nav ul li {
+    display: inline;
+}
+
+.user-options nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.logo-search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo img {
+    height: 100px;
+}
+
+.search-bar input[type="text"] {
+    padding: 10px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    border-radius: 25px;
+    background-color: #4e54c8;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #3c41a8;}
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url('VIC.webp');
+    background-size: cover;
+    height: 400px;
+    color: white;
+    position: relative;
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero button {
+    padding: 15px 30px;
+    border: none;
+    background-color: #4e54c8;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background-color: #3c41a8;
+}
+.categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    display: horizontal;
+}
+
+.category {
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.category:hover {
+    transform: scale(1.05);
+}
+
+.category img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+        .category ul li{
+    list-style-type: none;
+}
+
+.category h3 {
+    font-size: 1.5em;
+    margin: 15px 0;
+}
+
+.featured {
+    padding: 40px;
+    background-color:white;
+    text-align: center;
+}
+
+.featured h2 {
+    margin-bottom: 20px;
+}
+
+.featured-products {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product {
+    width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product h4 {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+footer {
+    background-color: rgb(15, 31, 173);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    }
+
+footer a {
+    color: white;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer form {
+    margin-top: 20px;
+}
+
+footer input[type="email"] {
+    padding: 10px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    width: 250px;
+}
+
+footer button {
+    padding: 10px 20px;
+    border-radius: 25px;
+    background-color: #3c41a8;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+   
+
+@media (max-width: 768px) {
+    
+}
+    .logo-search {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .search-bar input[type="text"] {
+        width: 100%;
+    }
+
+    .hero h2 {
+        font-size: 2em;
+    }
+
+    .categories {
+        grid-template-columns: 1fr;
+    }
+
